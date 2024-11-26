@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+header{
+width: 100%;
+height: 5.5rem;
+align-items: center;
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+position: relative;
+top: 0%;
+z-index: 1000;
+}
+.logo_container{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0 0 0 150px;
+}
+.logo_container img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.categories{
+    height: 80px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.categories a{
+    height: 100%;
+    width: 100%;
+    color: #000000;  
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-decoration: none;
+}
+.categories a:hover{
+    background-color: #eeeef0;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+}
+.categories a i{ 
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+    /* padding: 0 0 0 40px ; */
+}
+.search-bar{
+    max-width: 600px;
+    /* height: 100%; */
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 0 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 0.7rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: gray;
+    border: none;          
+    outline: none;
+    font-size: 1rem;
+}
+.search-bar i{
+    color: grey;
+    font-size: 1.5rem;
+    margin-left: -30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.signin{
+    width: 300px;
+    height: 100%;
+    padding: 0 100px 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font: 1.2rem sans-serif;
+    font-weight: bolder;
+    color: #000000;
+}
+.signin a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.sign:hover{
+    color: gray; 
+}
