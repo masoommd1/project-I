@@ -41,3 +41,4 @@ function nextSlide(){
     showSlide(slideIndex);
 
 }
+
