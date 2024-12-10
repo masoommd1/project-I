@@ -50,16 +50,74 @@ header{
 .categories a:hover{
     background-color: #eeeef0;
     border-radius: 20px;
-    transition: transform .2s cubic-bezier(.345,.115,.135,1.42), background .15s ease-out, box-shadow .2s ease-out;
+    transition: transform .2s cubic-bezier(.345,.115,.135,1.42),box-shadow .2s ease-out;
 }
 .categories a i{ 
     display: flex;
     text-align: center;
-    font-size: 1rem;
+}
+.categories-box{
+    width: 18rem;
+    height: 20rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 15rem;
+    margin: 0.5rem;
+    display: block;
+    border: none ;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+}
+.categories-box::before{
+    background-color: #fff;
+    border-bottom-color: #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    border-right-color: #bfbfbf;
+    border-top: 1px solid #bfbfbf;
+    content: "";
+    height: 10px;
+    left: 20%;
+    position: absolute;
+    top: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+}
+
+.categories-box.active{
+    transition: .4s linear;
+    visibility: visible;
+}
+.categories-box ul{
+    
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+.categories-box ul li  {
+    padding: 12px ;
+}
+.categories-box ul li a{
+    color: #000000;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.categories-box ul li:hover{
+    background-color: #eeeef0;
+    text-decoration: underline;
+    transition: background-color .1s ease-out;
+
 }
 .search-bar{
     max-width: 800px;
-    /* height: 100%; */
     display: flex;
     flex: 1;
     align-items: center;
@@ -92,13 +150,13 @@ header{
 }
 .search-bar i:hover{
     background-color: #d7e6f5;
-    transition: transform .2s cubic-bezier(.345,.115,.135,1.42), background .15s ease-out, box-shadow .2s ease-out;
+    transition: transform .2s cubic-bezier(.345,.115,.135,1.42),box-shadow .2s ease-out;
 
 }
 .carts{
     width: 300px;
     height: 44px;
-    padding: 0 112px 0 0 ;
+    padding: 0 120px 0 0 ;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -107,6 +165,7 @@ header{
 .carts a{
     font: 1rem sans-serif;
     text-decoration: none;
+    font-size: 0.98rem;
     font-weight: bold;
     color: #000000;
     position: relative;
@@ -115,7 +174,6 @@ header{
     display: flex;
     align-items: center;
     padding: 6px 15px;
-    font-size: 15px;
     line-height: 1.4;
 }
 .sign-btn:hover{
@@ -124,15 +182,13 @@ header{
     min-height:  25px ;
     border-radius: 100px ;
     transition: transform .2s cubic-bezier(.345,.115,.135,1.42),
-    background .15s ease-out, box-shadow .2s ease-out;
+     box-shadow .2s ease-out;
 
 }
 
 .heart-btn{
     display: flex;
     align-items: center;
-    min-width: 18px;
-    min-height: 20px;
     padding: 9px 15px;
 }
 .heart-btn i{
@@ -157,15 +213,13 @@ header{
     background-color:#d7e6f5;
     border: none;
     border-radius: 24px ;
-    transition: transform .2s cubic-bezier(.345,.115,.135,1.42), background .15s ease-out, box-shadow .2s ease-out;
+    transition: transform .2s cubic-bezier(.345,.115,.135,1.42),  box-shadow .2s ease-out;
 
 }
 .cart-btn{
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    min-width: 18px;
-    min-height: 20px;
     padding: 9px 15px;
 }
 .cart-btn i{
@@ -175,7 +229,7 @@ header{
     background-color: #d7e6f5;
     border: none;
     border-radius: 24px ;
-    transition: transform .2s cubic-bezier(.345,.115,.135,1.42), background .15s ease-out, box-shadow .2s ease-out;
+    transition: transform .2s cubic-bezier(.345,.115,.135,1.42),  box-shadow .2s ease-out;
 }
 /* ================================ main ==========================================*/
 main {
@@ -331,11 +385,9 @@ img.displaySlide{
     background-color: #d9d9d9;
     border-radius: 15px;
     width: 300px;
-    height: 350px;
-    /* border: 1px solid gray; */
+    height: 380px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* position: relative;   */
 }
 .card i {
     width: 30px;

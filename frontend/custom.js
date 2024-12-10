@@ -1,3 +1,10 @@
+//  ===================== categories =======================
+let categories = document.querySelector(".categories-box");
+document.querySelector(".cat-btn").onclick = () => {
+    categories.classList.toggle('active');
+};
+
+
 //======================= slider ===========================
 
 const slides = document.querySelectorAll(".slides img");
