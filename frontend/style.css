@@ -29,7 +29,7 @@ header{
 }
 .categories{
     height: 44px;
-    width: 120px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -38,9 +38,9 @@ header{
 .categories a{
     width: 100%;
     color: #000000;  
-    padding: 10px 5px;
+    padding: 9px 18px;
     font-size: 0.88rem;
-    font-weight: bold;
+    font-weight: 550;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@ header{
 .categories a:hover{
     background-color: #eeeef0;
     border-radius: 20px;
-    transition: transform .2s cubic-bezier(.345,.115,.135,1.42),box-shadow .2s ease-out;
+    transition: transform .5s cubic-bezier(.345,.115,.135,1.42),box-shadow .2s ease-out;
 }
 .categories a i{ 
     display: flex;
@@ -59,7 +59,7 @@ header{
 .categories-box{
     width: 18rem;
     height: 20rem;
-    position: absolute;
+    position: absolute; 
     top: 3.3rem;
     left: 15rem;
     margin: 0.5rem;
@@ -92,7 +92,6 @@ header{
     visibility: visible;
 }
 .categories-box ul{
-    
     padding: 0;
     text-decoration: none;
     list-style: none;
@@ -117,14 +116,14 @@ header{
 
 }
 .search-bar{
-    max-width: 800px;
+    width: 750px;
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     align-items: center;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 20px;
     padding: 0 0.5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #fff;
 }
 
@@ -133,6 +132,7 @@ header{
     padding: 0.7rem; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    border-radius: 20px;
     color: gray;
     border: none;          
     outline: none;
@@ -156,17 +156,16 @@ header{
 .carts{
     width: 300px;
     height: 44px;
-    padding: 0 120px 0 0 ;
+    padding: 0 125px 0 0 ;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #000000;
 }
 .carts a{
     font: 1rem sans-serif;
     text-decoration: none;
-    font-size: 0.98rem;
-    font-weight: bold;
+    font-weight: 550;
     color: #000000;
     position: relative;
 }
@@ -189,18 +188,18 @@ header{
 .heart-btn{
     display: flex;
     align-items: center;
-    padding: 9px 15px;
+    padding: 9px 9px;
 }
 .heart-btn i{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .fly-item{
     position: absolute;
     top: 0;
-    font-size: 13px;
+    font-size: 12px;
     right: 5px;
     width: 16px;
-    background-color: #3f3636; 
+    background-color: #707070; 
     border: none;
     border-radius: 50%;
     text-align: center;
@@ -216,16 +215,31 @@ header{
     transition: transform .2s cubic-bezier(.345,.115,.135,1.42),  box-shadow .2s ease-out;
 
 }
-.cart-btn{
+.cart-btn {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    padding: 9px 15px;
+    padding: 9px 9px;
 }
 .cart-btn i{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .cart-btn:hover{
+    background-color: #d7e6f5;
+    border: none;
+    border-radius: 24px ;
+    transition: transform .2s cubic-bezier(.345,.115,.135,1.42),  box-shadow .2s ease-out;
+}
+.notification-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 9px 9px;
+}
+.notification-btn i{
+    font-size: 1.3rem;
+}
+.notification-btn:hover{
     background-color: #d7e6f5;
     border: none;
     border-radius: 24px ;

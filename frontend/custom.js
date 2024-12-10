@@ -1,9 +1,21 @@
 //  ===================== categories =======================
-let categories = document.querySelector(".categories-box");
-document.querySelector(".cat-btn").onclick = () => {
-    categories.classList.toggle('active');
-};
+const categories = document.querySelector(".categories-box");
+const toggleButton = document.querySelector(".cat-btn");
 
+if (categories && toggleButton) {
+    toggleButton.addEventListener("click", (event) => {
+        categories.classList.toggle("active");
+        event.stopPropagation(); // Prevent the click from propagating to the document
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!categories.contains(event.target) && !toggleButton.contains(event.target)) {
+            categories.classList.remove("active");
+        }
+    });
+} else {
+    console.error("One or more elements are missing in the DOM.");
+}
 
 //======================= slider ===========================
 
