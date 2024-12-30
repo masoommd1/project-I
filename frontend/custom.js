@@ -16,6 +16,91 @@ if (categories && toggleButton) {
 } else {
     console.error("One or more elements are missing in the DOM.");
 }
+// ====================== SEARCH FUNTION ==================>
+    
+// ====================== SEARCH FUNTION ==================>
+
+    
+// Select elements
+const signBtn = document.querySelector('.sign-btn'); // "Sign in" button
+const signBox = document.querySelector('.sign-box'); // Modal box
+const closeBtn = document.querySelector('.close-btn'); // Close button
+const signing = document.querySelector('.signing'); // Background blur element
+
+// Open the sign-in box
+signBtn.addEventListener('click', () => {
+    signBox.classList.add('visible');
+    signing.classList.add('active');
+});
+
+// Close the sign-in box
+closeBtn.addEventListener('click', () => {
+    signBox.classList.remove('visible');
+    signing.classList.remove('active');
+});
+
+// Close the box when clicking outside
+signing.addEventListener('click', (event) => {
+    if (!signBox.contains(event.target)) {
+        signBox.classList.remove('visible');
+        signing.classList.remove('active');
+    }
+});
+
+// ====================== sign in ===========================
+
+// ====================== register box ===========================
+    
+// // Select elements
+// const registerBtn = document.querySelector('.register-btn'); // "Sign in" button
+// const registerBox = document.querySelector('.register-box'); // Modal box
+// const closeBtn = document.querySelector('.close-btn'); // Close button
+// const signing = document.querySelector('.signing'); // Background blur element
+
+// // Open the sign-in box
+// signBtn.addEventListener('click', () => {
+//     signBox.classList.add('visible');
+//     signing.classList.add('active');
+// });
+
+// // Close the sign-in box
+// closeBtn.addEventListener('click', () => {
+//     signBox.classList.remove('visible');
+//     signing.classList.remove('active');
+// });
+
+// // Close the box when clicking outside
+// signing.addEventListener('click', (event) => {
+//     if (!signBox.contains(event.target)) {
+//         signBox.classList.remove('visible');
+//         signing.classList.remove('active');
+//     }
+// });
+
+
+// ====================== register box ===========================
+
+// Handle form submission
+// form.addEventListener('submit', (event) => {
+//     event.preventDefault(); // Prevent default form submission behavior
+
+//     // Collect input values
+//     const email = form.querySelector('input[type="email"]').value;
+//     const password = form.querySelector('input[type="password"]').value;
+
+//     // Validation (example)
+//     if (!email || !password) {
+//         alert('Please fill in all fields.');
+//         return;
+//     }
+
+//     // Mock authentication logic
+//     alert(`Sign-in successful for: ${email}`);
+//     signBox.style.visibility = 'hidden'; // Hide the sign-in box after submission
+// });
+
+// ====================== sign in ===========================
+
 
 //======================= slider ===========================
 
