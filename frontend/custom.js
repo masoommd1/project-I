@@ -17,7 +17,25 @@ if (categories && toggleButton) {
     console.error("One or more elements are missing in the DOM.");
 }
 // ====================== SEARCH FUNTION ==================>
-    
+    // Add functionality to the search icon
+document.querySelector('.fa-search').addEventListener('click', function () {
+    const query = document.querySelector('.search-bar input').value.trim();
+    if (query) {
+        alert(`You searched for: ${query}`);
+        // Optionally, redirect to a search results page
+        // window.location.href = `/search?q=${encodeURIComponent(query)}`;
+    } else {
+        alert('Please enter a search term.');
+    }
+});
+
+// Allow pressing Enter to trigger search
+document.querySelector('.search-bar input').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        document.querySelector('.fa-search').click();
+    }
+});
+
 // ====================== SEARCH FUNTION ==================>
 
     
