@@ -492,3 +492,40 @@ main .title {
     height: 250px;
     box-shadow: 0 0 0 1px  #e7dada;
 }
+/* Styling for the buy box */
+/* .buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.products p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.products h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 18px;
+    color: #007bff;
+}
+
