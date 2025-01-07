@@ -145,3 +145,5 @@ function toggleWishlist(event) {
 document.querySelectorAll('.card i').forEach(icon => {
     icon.addEventListener('click', toggleWishlist);
 });
+// ================================
+

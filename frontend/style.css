@@ -5,7 +5,7 @@ body{
     
 }
 header{
-    height: 4.4rem;
+    height: 5.0rem;
     align-items: center;
     background-color: #fff;
     display: flex;
@@ -18,10 +18,10 @@ header{
 .logo_container{
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 110px;
     height: 50px;
     cursor: pointer;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 140px;
 }
 .logo_container img{
     width: 100%;
@@ -41,7 +41,7 @@ header{
     color: #000000;  
     padding: 9px 18px;
     font-size: 0.88rem;
-    font-weight: 550;
+    font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -174,7 +174,7 @@ header{
 .carts{
     width: 300px;
     height: 44px;
-    padding: 0 125px 0 0 ;
+    padding: 0 110px 0 0 ;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -193,7 +193,7 @@ header{
     padding: 6px 15px;
     line-height: 1.4;
     font-size: 0.88rem;
-    font-weight: 550;
+    font-weight: 400;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -313,7 +313,7 @@ header{
     margin: 50px 0 0px 0;
     padding: 12px 18px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     background-color: #000000;
     border: none;
@@ -360,6 +360,12 @@ header{
      box-shadow .2s ease-out;
 
 }
+.logos{
+    width: auto;
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-between;
+}
 
 .heart-btn{
     display: flex;
@@ -368,6 +374,7 @@ header{
 }
 .heart-btn i{
     font-size: 1.3rem;
+    font-weight: 600;
 }
 .fly-item{
     position: absolute;
@@ -394,11 +401,11 @@ header{
 .cart-btn {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
     padding: 9px 9px;
 }
 .cart-btn i{
     font-size: 1.3rem;
+    font-weight: 600;
 }
 .cart-btn:hover{
     background-color: #d7e6f5;
@@ -409,11 +416,11 @@ header{
 .notification-btn {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
     padding: 9px 9px;
 }
 .notification-btn i{
     font-size: 1.3rem;
+    font-weight: 600;
 }
 .notification-btn:hover{
     background-color: #d7e6f5;
@@ -644,6 +651,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer-container {
